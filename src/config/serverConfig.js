@@ -6,9 +6,7 @@ const dev = {
         port: process.env.APP_PORT || 3000
     },
     db: {
-        host: process.env.DB_HOST + '://' || 'localhost',
-        port: process.env.DB_USER_NAME + ':' + process.env.DB_PASSWORD + '@' + process.env.DB_CLUSTER + '.' + process.env.DB_PORT || 27017,
-        name: '/' + process.env.DB_NAME + '?retryWrites=true&w=majority' || 'db'
+        mongo: process.env.MongoDB_Conection_String
     }
 };
 

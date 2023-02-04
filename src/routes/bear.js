@@ -6,11 +6,11 @@ const data = require("../bears.json");
 const isAuthenticated  = require("../helpers/auth");
 
 //get all bears
-router.get("/", isAuthenticated, (req, res) => {
+router.get("/", (req, res) => {
   res.json(data);
 });
 //Get by id
-router.get("/:id", isAuthenticated, (req, res) => {
+router.get("/:id", (req, res) => {
   let { id } = req.params;
   let idNumber = parseInt(id);
   const dato = data.filter((x) => x.id === idNumber);
@@ -18,7 +18,7 @@ router.get("/:id", isAuthenticated, (req, res) => {
   res.json(dato);
 });
 //add new bear
-router.post("/",isAuthenticated, (req, res) => {
+router.post("/", (req, res) => {
   const { name, birthday, kindof, owner, beauthy } = req.body;
   if (name && birthday && kindof && owner && beauthy) {
     let id = data.length + 1;

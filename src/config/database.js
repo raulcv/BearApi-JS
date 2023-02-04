@@ -9,8 +9,7 @@ const serverConfig = require("./serverConfig")
 
 // const MongoDBConectionString =`mongodb+srv://${username}:${password}@${cluster}.mongodb.net/${dbname}?retryWrites=true&w=majority`
 // const MongoDBConectionString1 =`mongodb+srv://${username}:${password}@${cluster}.mongodb.net/${dbname}?retryWrites=true&w=majority`
-// console.log(MongoDBConectionString1)
-const MongoDBConectionString = serverConfig.db.host + serverConfig.db.port + serverConfig.db.name;
+const MongoDBConectionString = serverConfig.db.mongo
 console.log(MongoDBConectionString)
 
 const conexion = async () => {

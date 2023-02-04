@@ -11,7 +11,7 @@ app.set("port", APP_PORT);
 app.set("json spaces", 2);
 
 //Middleware
-app.use(morgan());
+app.use(morgan('tiny'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
