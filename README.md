@@ -6,7 +6,7 @@ API Rest with the these operations
 * PUT
 * DELETE
 
-It's is fully functional, bears not use a database just json file bu users are stored in mongodb.
+It's fully functional, bears not use a database just json file bu users are stored in mongodb.
 
 ### 🛠 &nbsp;This project uses the following technologies:
 
